@@ -15,7 +15,7 @@ function generatePassword(){
   var uppercase = confirm("Do you want to include uppercase letters? in your password");
   var numbers = confirm("Do you want to include numbers in your password?");
   var special = confirm("Do you want to include special in your password?");
-
+  
 // if requirements don't work prompt user again
   while (lowercase === false && uppercase === false && numbers === false && special === false){
     alert("You must have one of these criterias");
@@ -41,7 +41,7 @@ function generatePassword(){
   var lnsA = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n","o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0","@", "%", "+", "/", "'", "!", "#", "$", "^", "?", ":", ".", "(", ")", "{", "}", "[", "]", "~", "-", "_"];
   var lunsA = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n","o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N","O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0","@", "%", "+", "/", "'", "!", "#", "$", "^", "?", ":", ".", "(", ")", "{", "}", "[", "]", "~", "-", "_"];
 
-    //conditions for each input
+  //conditions for each input
     if (lowercase === true && uppercase === false &&  numbers === false && special === false){
       var lP = [];
          for(i = 0; i < lengthp; i++){
@@ -178,12 +178,11 @@ function generatePassword(){
              return passwordArray;
             }
 }  
-//calls function and set the password to value
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
