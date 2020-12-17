@@ -4,7 +4,7 @@
 This file creates a randomly generated password.  The password is generated from the users input of how many characters and what the passwords consists of: lowercase letter, uppercase letters, symbols, and/or numbers.  The password is then displayed on the screen for the user.
 
 ## Link to Webpage
-https://katemilano.github.io/homework3/
+https://katemilano.github.io/passwordgenerator/
 
 
 ## Webpage Image 
